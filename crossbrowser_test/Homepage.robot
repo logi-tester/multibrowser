@@ -15,13 +15,7 @@ Browser launch
 header menu list and link redirection verification
     ${menu_list}=    Get Element Count    xpath=.//ul[@id='nav']/li
     Should Be True    ${menu_list}>=5
-
-header and footer verification
-    Element Should Be Visible    xpath=.//header
-    Sleep    4s
-    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
-    Element Should Be Visible    xpath=.//footer
-
+    
 *** Keywords ***
 Jenkins browser launch
     Set Selenium Speed    1s
