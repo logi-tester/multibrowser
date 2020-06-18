@@ -16,6 +16,9 @@ header menu list and link redirection verification
     ${menu_list}=    Get Element Count    xpath=.//ul[@id='nav']/li
     Should Be True    ${menu_list}>=5
     
+Close browser     
+    Sleep    10s  
+    Close Browser
 *** Keywords ***
 Jenkins browser launch
     Set Selenium Speed    1s
