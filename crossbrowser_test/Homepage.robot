@@ -7,7 +7,7 @@ ${baseurl}        https://www.fsstech.com/
 *** Test Cases ***
 Browser launch
     [Documentation]    FireFox Browser with Amazon web site
-    Open Browser    ${base_url}    ${BROWSER}    None    http://10.100.20.113:4444/wd/hub
+    Open Browser    ${base_url}    ${BROWSER}    None    http://10.100.20.147:4444/wd/hub
     Maximize Browser Window
     Set Browser Implicit Wait    15s
     Sleep    5s
